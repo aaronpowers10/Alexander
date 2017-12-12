@@ -50,9 +50,11 @@ import alexander.core.WeatherFile;
  * Latitude: As a 4 byte float <br/>
  * Longitude: As a 4 byte float <br/>
  * Time Zone: As a 4 byte integer <br/>
+ * Record Number: As a 4 byte integer <br/>
  * Number of Days in the Record: As a 4 byte integer <br/>
  * Clearness Number: As a 4 byte float <br/>
  * Ground Temperature: As a 4 byte float <br/>
+ * Solar Flag: As a 4 byte integer <br/>
  * A sequence of 4*NumDays 31 bit words which encode the hourly data 
  * (the first bit in a 32 bit signed integer is used
  * to denote positive or negative). <p/>
