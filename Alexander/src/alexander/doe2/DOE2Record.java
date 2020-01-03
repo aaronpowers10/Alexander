@@ -66,7 +66,8 @@ public class DOE2Record {
 	}
 	
 	public void write(ByteBuffer outputBuffer){
-		outputBuffer.put(new byte[4]);
+		//outputBuffer.put(new byte[4]);
+		outputBuffer.putInt(6200);
 		headerData.write(outputBuffer);	
 		for(int i=0;i<hourlyData.size();i++){
 			hourlyData.get(i).write(outputBuffer);
