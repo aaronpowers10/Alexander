@@ -77,7 +77,8 @@ public class DOE2Record {
 			byte[] dummyBytes = new byte[remainingBytes];
 			outputBuffer.put(dummyBytes);
 		}
-		outputBuffer.put(new byte[4]);
+		outputBuffer.putInt(6200);
+		//outputBuffer.put(new byte[4]);
 	}
 
 	public DOE2Header getHeaderData() {
